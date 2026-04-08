@@ -26,7 +26,7 @@ userSchema.pre('save', async function (next) {
   // Only hash if password was changed
   if (!this.isModified('password')) return next();
   this.password = await bcrypt.hash(this.password, 10);
-  next();
+  // next();
 });
 
 export default mongoose.model('User', userSchema);

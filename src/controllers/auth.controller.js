@@ -9,6 +9,8 @@ import {
 export const register = async (req, res) => {
   try {
     const { name, email, password } = req.body;
+    console.log(req.body);
+    
 
     // Check if email already exists
     const exists = await User.findOne({ email });

@@ -2,9 +2,9 @@
   "name": "redis",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "dev":"npx nodemon src/app.js"
+    "dev": "npx nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +14,10 @@
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.4.1",
     "express": "^5.2.1",
+    "geoip-lite": "^2.0.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.4.1",
-    "redis": "^5.11.0"
+    "redis": "^5.11.0",
+    "ua-parser-js": "^2.0.9"
   }
 }
